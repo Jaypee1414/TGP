@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+body{
+    background-image: url(../images/school.jpg);
+    height: 1080px;
+}
+
+body::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1080px; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+}
+
+#header #logo{
+    margin: 16px 40px;
+    position: absolute;
+}
+
+#header #logo img{
+    height: 100px;
+    border-radius: 50%;
+}
+
+#header ul{
+    margin-top: 50px;
+    margin-right: 280px;
+    right: 0;
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+#header ul a{
+    font-weight: 700;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+#header ul a li{
+    margin-right: 70px;
+    float: left;
+    list-style: none;
+    font-size: 18px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+#signin{
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 800px;
+    transform: translate(-50%,-50%);
+    height: 620px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    z-index: 2;
+    border: 1px solid white;
+}
+
+#signin img{
+    position: absolute;
+    border-radius: 50%;
+    height: 120px;
+    top: -50px;
+    left: 4%;
+    border: 1px solid black;
+}
+
+#signin #text{
+    position: relative;
+    color: white;
+    width: 100%;
+}
+
+#signin #text h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 70px;
+    margin-top: 90px;
+    font-size: 30px;
+    font-weight:500;
+}
+
+#signin #fillup{
+    /* border: 1px solid white; */
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+#signin #fillup input{
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background-color: rgba(48, 42, 42, 1);
+    border: 1px solid white;
+}
+
+#signin #fillup ::placeholder{
+    position: absolute;
+    font-family:sans-serif;
+    top: 30%;
+    margin-left: 30px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#signin #btn{
+    position: relative;
+    width: 50%;
+    height: 50px;
+    top: 0;
+    margin-top: 15px;
+    margin-left: 350px;
+}
+
+#signin #btn button{
+    margin-right: 70px;
+    top:-10px;
+    background-color: red;
+    margin-left: 70px;
+    width: 300px;
+    height: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#signin #btn #login{
+    color:  white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+#signin #help{
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+    width: 65%;
+    margin-left: 140px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+}
+
+
+
+#signin #btn h6{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    /* color: rgba(48, 42, 42, 5); */
+    color: gray;
+    position: absolute;
+    left: 70px;
+    margin-top: 10px;
+}   
+
+#signin #btn h6:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#signin #help p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    /* color: rgba(48, 42, 42, 5); */
+    color: rgb(119, 107, 107);
+}
+
+#password1{
+    position: absolute;
+    right: -350px;
+    top: 0;
+}
+
+#password2{
+    position: absolute;
+    right: -350px;
+    top: 70px;
+}
+
+#password3{
+    position: absolute;
+    right: -350px;
+    top: 140px;
+}
+
+#file{
+    position: relative;
+    width: 100%;
+    margin-top: 33px;
+}
+
+#file input{
+    position: absolute;
+    right: 0;
+    margin-right: 90px;
+    color: white;
+}
+
+#file #errors p{
+    position: absolute;
+    right: 0;
+    margin-right: 90px;
+    color: white;
+    margin-top: 50px;
+}
